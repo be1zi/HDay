@@ -13,9 +13,16 @@
 		3D12BADF21A81B4900D9D87C /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BADE21A81B4900D9D87C /* WindowManager.swift */; };
 		3D12BAE221A8362000D9D87C /* String+HDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BAE121A8362000D9D87C /* String+HDay.swift */; };
 		3D12BAE621A838F000D9D87C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D12BAE821A838F000D9D87C /* Localizable.strings */; };
+		3D12BAED21A8449C00D9D87C /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BAEC21A8449C00D9D87C /* MenuTabBarController.swift */; };
+		3D12BAEF21A844AB00D9D87C /* MenuTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D12BAEE21A844AB00D9D87C /* MenuTabBar.storyboard */; };
+		3D12BAF421A84B9900D9D87C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BAF221A84B9900D9D87C /* ProfileViewController.swift */; };
+		3D12BAF721A84BAC00D9D87C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D12BAF621A84BAC00D9D87C /* Profile.storyboard */; };
+		3D12BAFA21A84CB600D9D87C /* MenuHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BAF921A84CB600D9D87C /* MenuHomeItem.swift */; };
+		3D12BAFC21A84CCA00D9D87C /* MenuProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BAFB21A84CCA00D9D87C /* MenuProfileItem.swift */; };
+		3D12BAFF21A84CF900D9D87C /* MenuBaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BAFE21A84CF900D9D87C /* MenuBaseItem.swift */; };
+		3D12BB0121A84D3F00D9D87C /* MenuFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BB0021A84D3F00D9D87C /* MenuFactory.swift */; };
 		3D52BCEE21A56A5F00EC2CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52BCED21A56A5F00EC2CD1 /* AppDelegate.swift */; };
 		3D52BCF021A56A5F00EC2CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52BCEF21A56A5F00EC2CD1 /* ViewController.swift */; };
-		3D52BCF321A56A5F00EC2CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D52BCF121A56A5F00EC2CD1 /* Main.storyboard */; };
 		3D52BCF621A56A5F00EC2CD1 /* HDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D52BCF421A56A5F00EC2CD1 /* HDay.xcdatamodeld */; };
 		3D52BCF821A56A6000EC2CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D52BCF721A56A6000EC2CD1 /* Assets.xcassets */; };
 		3D52BCFB21A56A6000EC2CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D52BCF921A56A6000EC2CD1 /* LaunchScreen.storyboard */; };
@@ -30,10 +37,17 @@
 		3D12BAE121A8362000D9D87C /* String+HDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HDay.swift"; sourceTree = "<group>"; };
 		3D12BAE721A838F000D9D87C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3D12BAE921A8391400D9D87C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3D12BAEC21A8449C00D9D87C /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
+		3D12BAEE21A844AB00D9D87C /* MenuTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuTabBar.storyboard; sourceTree = "<group>"; };
+		3D12BAF221A84B9900D9D87C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3D12BAF621A84BAC00D9D87C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		3D12BAF921A84CB600D9D87C /* MenuHomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHomeItem.swift; sourceTree = "<group>"; };
+		3D12BAFB21A84CCA00D9D87C /* MenuProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileItem.swift; sourceTree = "<group>"; };
+		3D12BAFE21A84CF900D9D87C /* MenuBaseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBaseItem.swift; sourceTree = "<group>"; };
+		3D12BB0021A84D3F00D9D87C /* MenuFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFactory.swift; sourceTree = "<group>"; };
 		3D52BCEA21A56A5F00EC2CD1 /* HDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D52BCED21A56A5F00EC2CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D52BCEF21A56A5F00EC2CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D52BCF221A56A5F00EC2CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D52BCF521A56A5F00EC2CD1 /* HDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HDay.xcdatamodel; sourceTree = "<group>"; };
 		3D52BCF721A56A6000EC2CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D52BCFA21A56A6000EC2CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,6 +127,60 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
+		3D12BAEA21A8445E00D9D87C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BAF821A84C9300D9D87C /* Items */,
+				3D12BAF121A84B6000D9D87C /* Factory */,
+				3D12BAEB21A8447600D9D87C /* TapBar */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		3D12BAEB21A8447600D9D87C /* TapBar */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BAEC21A8449C00D9D87C /* MenuTabBarController.swift */,
+				3D12BAEE21A844AB00D9D87C /* MenuTabBar.storyboard */,
+			);
+			path = TapBar;
+			sourceTree = "<group>";
+		};
+		3D12BAF021A8461D00D9D87C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BAF221A84B9900D9D87C /* ProfileViewController.swift */,
+				3D12BAF621A84BAC00D9D87C /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3D12BAF121A84B6000D9D87C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BB0021A84D3F00D9D87C /* MenuFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		3D12BAF821A84C9300D9D87C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BAFD21A84CEC00D9D87C /* Base */,
+				3D12BAF921A84CB600D9D87C /* MenuHomeItem.swift */,
+				3D12BAFB21A84CCA00D9D87C /* MenuProfileItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		3D12BAFD21A84CEC00D9D87C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BAFE21A84CF900D9D87C /* MenuBaseItem.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		3D52BCE121A56A5F00EC2CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +206,6 @@
 				3DC36A0921A80BF9003E0E12 /* Source */,
 				3DC36A0821A80BCE003E0E12 /* Resources */,
 				3D52BCEF21A56A5F00EC2CD1 /* ViewController.swift */,
-				3D52BCF121A56A5F00EC2CD1 /* Main.storyboard */,
 			);
 			path = HDay;
 			sourceTree = "<group>";
@@ -186,6 +253,8 @@
 			children = (
 				3D12BAD721A816DD00D9D87C /* Home */,
 				3DC36A0F21A80CDC003E0E12 /* Launch */,
+				3D12BAEA21A8445E00D9D87C /* Menu */,
+				3D12BAF021A8461D00D9D87C /* Profile */,
 			);
 			path = Functionalities;
 			sourceTree = "<group>";
@@ -291,10 +360,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D12BAF721A84BAC00D9D87C /* Profile.storyboard in Resources */,
 				3D12BAE621A838F000D9D87C /* Localizable.strings in Resources */,
+				3D12BAEF21A844AB00D9D87C /* MenuTabBar.storyboard in Resources */,
 				3D52BCFB21A56A6000EC2CD1 /* LaunchScreen.storyboard in Resources */,
 				3D52BCF821A56A6000EC2CD1 /* Assets.xcassets in Resources */,
-				3D52BCF321A56A5F00EC2CD1 /* Main.storyboard in Resources */,
 				3D12BADC21A8173D00D9D87C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,11 +415,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D12BB0121A84D3F00D9D87C /* MenuFactory.swift in Sources */,
+				3D12BAFF21A84CF900D9D87C /* MenuBaseItem.swift in Sources */,
+				3D12BAED21A8449C00D9D87C /* MenuTabBarController.swift in Sources */,
 				3D12BADA21A8171900D9D87C /* HomeViewController.swift in Sources */,
 				3D52BCF021A56A5F00EC2CD1 /* ViewController.swift in Sources */,
 				3D12BAE221A8362000D9D87C /* String+HDay.swift in Sources */,
+				3D12BAFA21A84CB600D9D87C /* MenuHomeItem.swift in Sources */,
 				3D12BAD621A815FD00D9D87C /* BaseViewController.swift in Sources */,
+				3D12BAFC21A84CCA00D9D87C /* MenuProfileItem.swift in Sources */,
 				3D52BCEE21A56A5F00EC2CD1 /* AppDelegate.swift in Sources */,
+				3D12BAF421A84B9900D9D87C /* ProfileViewController.swift in Sources */,
 				3D52BCF621A56A5F00EC2CD1 /* HDay.xcdatamodeld in Sources */,
 				3D12BADF21A81B4900D9D87C /* WindowManager.swift in Sources */,
 			);
@@ -365,14 +441,6 @@
 				3D12BAE921A8391400D9D87C /* pl */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		3D52BCF121A56A5F00EC2CD1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D52BCF221A56A5F00EC2CD1 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		3D52BCF921A56A6000EC2CD1 /* LaunchScreen.storyboard */ = {
@@ -519,7 +587,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Belzowski.HDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -538,7 +606,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Belzowski.HDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

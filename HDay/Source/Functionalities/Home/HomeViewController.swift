@@ -12,7 +12,9 @@ class HomeViewController: BaseViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
 
+    //
     //MAKR: Lifecycle
+    //
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,9 @@ class HomeViewController: BaseViewController {
         setProperties()
     }
     
+    //
     //Mark: Properties
+    //
     
     private func setProperties() -> Void {
         
