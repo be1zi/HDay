@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func sharedInstance() -> AppDelegate {
+    static func sharedInstance() -> AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
     
@@ -99,10 +99,12 @@ extension AppDelegate {
     
     func launchFirstWindow() -> Void {
         
-        let storyboard : UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "Home")
+        if (window == nil) {
+            self.window = UIWindow.init()
+            self.window?.makeKeyAndVisible()
+        }
         
-        self.window?.rootViewController = vc;
+        WindowManager.switchToHomeViewController()
     }
 }
 
