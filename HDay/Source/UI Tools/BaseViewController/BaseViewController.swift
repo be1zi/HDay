@@ -10,6 +10,19 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
+    //MARK: Lifecycle
+    
+    override func viewDidLoad() {
+        
+        loadTranslations()
+    }
+    
+    //MARK: Proeprties
+    
+    public func loadTranslations() -> Void {
+    
+    }
+    
 }
 
 
