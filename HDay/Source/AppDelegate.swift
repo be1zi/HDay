@@ -14,9 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    func sharedInstance() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.launchFirstWindow()
+        
         return true
     }
 
@@ -88,6 +93,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+}
 
+extension AppDelegate {
+    
+    func launchFirstWindow() -> Void {
+        
+        let storyboard : UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Home")
+        
+        self.window?.rootViewController = vc;
+    }
 }
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D12BAD621A815FD00D9D87C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BAD521A815FD00D9D87C /* BaseViewController.swift */; };
+		3D12BADA21A8171900D9D87C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BAD921A8171900D9D87C /* HomeViewController.swift */; };
+		3D12BADC21A8173D00D9D87C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D12BADB21A8173D00D9D87C /* Home.storyboard */; };
+		3D12BADF21A81B4900D9D87C /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12BADE21A81B4900D9D87C /* WindowManager.swift */; };
 		3D52BCEE21A56A5F00EC2CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52BCED21A56A5F00EC2CD1 /* AppDelegate.swift */; };
 		3D52BCF021A56A5F00EC2CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52BCEF21A56A5F00EC2CD1 /* ViewController.swift */; };
 		3D52BCF321A56A5F00EC2CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D52BCF121A56A5F00EC2CD1 /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D12BAD521A815FD00D9D87C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3D12BAD921A8171900D9D87C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3D12BADB21A8173D00D9D87C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		3D12BADE21A81B4900D9D87C /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
 		3D52BCEA21A56A5F00EC2CD1 /* HDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D52BCED21A56A5F00EC2CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D52BCEF21A56A5F00EC2CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +65,31 @@
 				C2A9EF96DE2435ABBBFFCE1D /* Pods-HDay.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D12BAD421A815DD00D9D87C /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BAD521A815FD00D9D87C /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		3D12BAD721A816DD00D9D87C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BAD921A8171900D9D87C /* HomeViewController.swift */,
+				3D12BADB21A8173D00D9D87C /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3D12BADD21A81B2800D9D87C /* WindowManager */ = {
+			isa = PBXGroup;
+			children = (
+				3D12BADE21A81B4900D9D87C /* WindowManager.swift */,
+			);
+			path = WindowManager;
 			sourceTree = "<group>";
 		};
 		3D52BCE121A56A5F00EC2CD1 = {
@@ -129,6 +162,7 @@
 		3DC36A0A21A80C69003E0E12 /* Functionalities */ = {
 			isa = PBXGroup;
 			children = (
+				3D12BAD721A816DD00D9D87C /* Home */,
 				3DC36A0F21A80CDC003E0E12 /* Launch */,
 			);
 			path = Functionalities;
@@ -159,6 +193,8 @@
 		3DC36A0E21A80C9C003E0E12 /* UI Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3D12BAD421A815DD00D9D87C /* BaseViewController */,
+				3D12BADD21A81B2800D9D87C /* WindowManager */,
 			);
 			path = "UI Tools";
 			sourceTree = "<group>";
@@ -234,6 +270,7 @@
 				3D52BCFB21A56A6000EC2CD1 /* LaunchScreen.storyboard in Resources */,
 				3D52BCF821A56A6000EC2CD1 /* Assets.xcassets in Resources */,
 				3D52BCF321A56A5F00EC2CD1 /* Main.storyboard in Resources */,
+				3D12BADC21A8173D00D9D87C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D12BADA21A8171900D9D87C /* HomeViewController.swift in Sources */,
 				3D52BCF021A56A5F00EC2CD1 /* ViewController.swift in Sources */,
+				3D12BAD621A815FD00D9D87C /* BaseViewController.swift in Sources */,
 				3D52BCEE21A56A5F00EC2CD1 /* AppDelegate.swift in Sources */,
 				3D52BCF621A56A5F00EC2CD1 /* HDay.xcdatamodeld in Sources */,
+				3D12BADF21A81B4900D9D87C /* WindowManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +475,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/HDay/Configuration/Debug/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Belzowski.HDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -451,7 +494,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/HDay/Configuration/Debug/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Belzowski.HDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
