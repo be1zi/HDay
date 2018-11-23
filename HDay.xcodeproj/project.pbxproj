@@ -13,6 +13,7 @@
 		3D52BCF621A56A5F00EC2CD1 /* HDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D52BCF421A56A5F00EC2CD1 /* HDay.xcdatamodeld */; };
 		3D52BCF821A56A6000EC2CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D52BCF721A56A6000EC2CD1 /* Assets.xcassets */; };
 		3D52BCFB21A56A6000EC2CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D52BCF921A56A6000EC2CD1 /* LaunchScreen.storyboard */; };
+		CD410899D1FF925B83FBA4AC /* Pods_HDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E7747C05A508FFEEEA2D24 /* Pods_HDay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		3D52BCF721A56A6000EC2CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D52BCFA21A56A6000EC2CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D52BCFC21A56A6000EC2CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E7747C05A508FFEEEA2D24 /* Pods_HDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6492B0DD98518566F5187E1 /* Pods-HDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDay/Pods-HDay.debug.xcconfig"; sourceTree = "<group>"; };
+		C2A9EF96DE2435ABBBFFCE1D /* Pods-HDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDay/Pods-HDay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD410899D1FF925B83FBA4AC /* Pods_HDay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CAADB4A12E47DD43FBB1988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41E7747C05A508FFEEEA2D24 /* Pods_HDay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		263258CA6D105BE66F3D0E52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6492B0DD98518566F5187E1 /* Pods-HDay.debug.xcconfig */,
+				C2A9EF96DE2435ABBBFFCE1D /* Pods-HDay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3D52BCE121A56A5F00EC2CD1 = {
 			isa = PBXGroup;
 			children = (
 				3D52BCEC21A56A5F00EC2CD1 /* HDay */,
 				3D52BCEB21A56A5F00EC2CD1 /* Products */,
+				263258CA6D105BE66F3D0E52 /* Pods */,
+				0CAADB4A12E47DD43FBB1988 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D52BCFF21A56A6000EC2CD1 /* Build configuration list for PBXNativeTarget "HDay" */;
 			buildPhases = (
+				F965F0888587ABB0AD710683 /* [CP] Check Pods Manifest.lock */,
 				3D52BCE621A56A5F00EC2CD1 /* Sources */,
 				3D52BCE721A56A5F00EC2CD1 /* Frameworks */,
 				3D52BCE821A56A5F00EC2CD1 /* Resources */,
+				9318A08FCF18B6E64607A911 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +238,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9318A08FCF18B6E64607A911 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HDay/Pods-HDay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HDay/Pods-HDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F965F0888587ABB0AD710683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D52BCE621A56A5F00EC2CD1 /* Sources */ = {
@@ -364,15 +429,13 @@
 		};
 		3D52BD0021A56A6000EC2CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6492B0DD98518566F5187E1 /* Pods-HDay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/HDay/Configuration/Debug/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Belzowski.HDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -382,15 +445,13 @@
 		};
 		3D52BD0121A56A6000EC2CD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A9EF96DE2435ABBBFFCE1D /* Pods-HDay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/HDay/Configuration/Debug/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Belzowski.HDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
