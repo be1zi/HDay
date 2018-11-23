@@ -56,15 +56,95 @@
 		3D52BCEC21A56A5F00EC2CD1 /* HDay */ = {
 			isa = PBXGroup;
 			children = (
-				3D52BCED21A56A5F00EC2CD1 /* AppDelegate.swift */,
+				3DC36A0621A80BA1003E0E12 /* Configuration */,
+				3DC36A0921A80BF9003E0E12 /* Source */,
+				3DC36A0821A80BCE003E0E12 /* Resources */,
 				3D52BCEF21A56A5F00EC2CD1 /* ViewController.swift */,
 				3D52BCF121A56A5F00EC2CD1 /* Main.storyboard */,
-				3D52BCF721A56A6000EC2CD1 /* Assets.xcassets */,
-				3D52BCF921A56A6000EC2CD1 /* LaunchScreen.storyboard */,
-				3D52BCFC21A56A6000EC2CD1 /* Info.plist */,
-				3D52BCF421A56A5F00EC2CD1 /* HDay.xcdatamodeld */,
 			);
 			path = HDay;
+			sourceTree = "<group>";
+		};
+		3DC36A0621A80BA1003E0E12 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3DC36A0721A80BAB003E0E12 /* Debug */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3DC36A0721A80BAB003E0E12 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3D52BCFC21A56A6000EC2CD1 /* Info.plist */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		3DC36A0821A80BCE003E0E12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D52BCF721A56A6000EC2CD1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DC36A0921A80BF9003E0E12 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3D52BCED21A56A5F00EC2CD1 /* AppDelegate.swift */,
+				3DC36A0A21A80C69003E0E12 /* Functionalities */,
+				3DC36A0B21A80C7D003E0E12 /* Network */,
+				3DC36A0C21A80C8D003E0E12 /* Model */,
+				3DC36A0D21A80C96003E0E12 /* Tools */,
+				3DC36A0E21A80C9C003E0E12 /* UI Tools */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3DC36A0A21A80C69003E0E12 /* Functionalities */ = {
+			isa = PBXGroup;
+			children = (
+				3DC36A0F21A80CDC003E0E12 /* Launch */,
+			);
+			path = Functionalities;
+			sourceTree = "<group>";
+		};
+		3DC36A0B21A80C7D003E0E12 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3DC36A0C21A80C8D003E0E12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D52BCF421A56A5F00EC2CD1 /* HDay.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DC36A0D21A80C96003E0E12 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3DC36A0E21A80C9C003E0E12 /* UI Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI Tools";
+			sourceTree = "<group>";
+		};
+		3DC36A0F21A80CDC003E0E12 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				3D52BCF921A56A6000EC2CD1 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = HDay/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HDay/Configuration/Debug/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = HDay/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HDay/Configuration/Debug/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
